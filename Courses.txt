@@ -1,0 +1,5 @@
+id;name;description;photo_1;photo_2;rating
+0;rjojforj;ghbwejgkjefk;images/courses.png;images/courses.png;5
+1;ifyguohilj;k;uyiuhkjlvb;images/courses.png;images/courses.png;5
+2;hghkjlk;mmmmm;images/courses.png;images/courses.png;5
+3;AAAAAAAAAAAA;lwkdjclksdjc;images/courses.png;images/courses.png;5

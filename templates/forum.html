@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('static', filename='cards.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='mainpage.css') }}">
+
+   <main>
+
+
+        <div class="content">
+
+            <div>
+                <a>
+                            <p class="text">            типо отступ, хз как это сделать           </p>
+                            <p class="text">            hhh           </p>
+                            <p class="text">            hhh           </p>
+                </a>
+            </div>
+
+            <div class="products">
+                {% for i in file %}
+                    <a href="/forum_chat" >
+                        <div class="product">
+                            <div class="product-info">
+                                <h3 class="text">Название {{i.split(";")[1]}}</h3>
+                                <p class="text">{{i.split(";")[3]}}, {{i.split(";")[2]}}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <p class="text">            hhh           </p>
+                {% endfor %}
+        </div>
+
+
+
+
+
+
+    </main>{% endblock %}

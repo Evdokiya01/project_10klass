@@ -1,0 +1,81 @@
+
+<!doctype html>
+<link rel="stylesheet" href="{{ url_for('static', filename='mainpage.css') }}">
+<html lang="en" class="dark">
+<link rel="stylesheet" href="mainpage.css">
+    <div class="for-header">
+        <title>SVIDQN • Main Page</title>
+        <header>
+            <div class="for-header">
+                <a href="/" class="logo">SVIDQN</a>
+
+                <form class="search">
+                    <label>
+                        <input type="text" placeholder="Поиск">
+                    </label>
+                    <button type="submit">
+                        <img src="{{ url_for('static', filename='images/search.svg') }}" class="search-photo-filter" alt="Q">
+                    </button>
+                </form>
+
+                <div class="quick-buttons">
+                    <ul>
+                        <li><a href="/market">Магазин</a></li>
+                        <li><a href="/forum">Форум</a></li>
+                        <li><a href="/courses">Курсы</a></li>
+                    </ul>
+                </div>
+
+                <a href="/profile">
+                    <img class="avatar-photo" src="{{ url_for('static', filename='images/avatar_photo.png') }}" alt="">
+                </a>
+                <!--ВЫБОР ЯЗЫКА-->
+                <div class="wrapper">
+                    <div class="select_wrap">
+                        <ul class="defaulto_ption">
+                            <li>
+                                <div class="option ru">
+                                    <div class="icon"></div>
+                                    <p>Русский</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="select_ul">
+                            <li selected>
+                                <div class="option en" selected>
+                                    <div class="icon" selected></div>
+                                    <p>English</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="option ru">
+                                    <div class="icon"></div>
+                                    <p>Русский</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="option es">
+                                    <div class="icon"></div>
+                                    <p>Español</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="option cn">
+                                    <div class="icon"></div>
+                                    <p>汉语</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--ВЫБОР ЯЗЫКА-->
+        </header>
+    </div>
+
+    <body>
+    {% block body %} {% endblock %}
+    </body>
+
+
+</html>
+

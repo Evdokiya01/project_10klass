@@ -1,0 +1,5 @@
+id;name;description;photo_from_the_front;photo_from_the_back;photo_from_the_right;photo_on_the_left;photo_from_above;photo_from_below;author;comments;rating;email
+0;korob;aaaaaaaal;'images/market.png';'images/market.png';'images/market.png';'images/market.png';'images/market.png';'images/market.png';dunya;oerfjoj;10;avditia233@gmail.com
+0;korob;aaaaaaaal;'images/market.png';'images/market.png';'images/market.png';'images/market.png';'images/market.png';'images/market.png';dunya;oerfjoj;10;avditia233@gmail.com
+0;korob;aaaaaaaal;'images/market.png';'images/market.png';'images/market.png';'images/market.png';'images/market.png';'images/market.png';dunya;oerfjoj;10;avditia233@gmail.com
+0;korob;aaaaaaaal;'images/market.png';'images/market.png';'images/market.png';'images/market.png';'images/market.png';'images/market.png';dunya;oerfjoj;10;avditia233@gmail.com

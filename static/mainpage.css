@@ -1,0 +1,649 @@
+/*Для футера*/
+:root
+{
+
+    --body-height: 2000px;
+}
+
+/*Данные по умолчанию, для тела, обнуление отступов, сделанных сайтом*/
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html.dark
+{
+    --color-bg: linear-gradient(180deg, #100530 25%, #41284D 100%) fixed;
+}
+
+html.light
+{
+    --color-bg: linear-gradient(180deg, rgba(164, 164, 227, 0.82)  35%, rgba(252, 185, 185, 0.82) 100%) fixed;
+}
+
+body
+{
+    height: var(--body-height);
+    margin: 0 0 0 0;
+
+    background: var(--color-bg);
+}
+
+a
+{
+    text-decoration: none;
+}
+
+
+/*Визитная карточка*/
+.visit-card
+{
+    width: 1378px;
+    height: 666px;
+    border-radius: 10px;
+    background: #060223;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    margin: 120px auto 0 auto;
+
+    /*чтобы не пересекалось с хедером*/
+    z-index: 1;
+}
+
+.visit-card:hover
+{
+    transition:all .3s;
+    width: 1400px;
+}
+
+.visit-card-photo
+{
+    width: 997px;
+    height: 666px;
+    border-radius: 10px;
+    background: url(images/coolimg.png), lightgray 50% / cover no-repeat;
+
+    position: absolute;
+    right: 0;
+}
+
+.visit-card-main-text
+{
+    color: #FFF;
+    text-shadow: 8px 1px 22px #000;
+    font-family: "Proxima Nova", serif;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    z-index: 2;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.visit-card-desc-text
+{
+    color: #FFF;
+    font-family: "Proxima Nova", serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    position: absolute;
+    z-index: 2;
+    width: 400px;
+    height: auto;
+    flex-shrink: 0;
+    bottom: 40px;
+    left: 40px;
+}
+
+/*Три кнопки*/
+.main-quick-buttons
+{
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    position: absolute;
+    top: 812px;
+}
+
+.main-quick-buttons a
+{
+    width: 443px;
+    height: 536px;
+    border-radius: 10px;
+    background: rgba(6, 2, 35, 0.65);
+}
+
+.main-quick-buttons a:hover
+{
+    background: rgba(6, 2, 35, 0.45);
+    transition: all .3s;
+    width: 453px;
+    height: 546px;
+}
+
+.forum-main-quick-button
+{
+    margin-right: 25px;
+}
+
+.market-main-quick-button
+{
+    margin-right: 25px;
+}
+
+.courses-main-quick-button
+{
+
+}
+
+.fmq-button-photo
+{
+    width: 250px;
+    height: 233px;
+    margin: 80px 0 0 95px;
+}
+
+.mmq-button-photo
+{
+    width: 314px;
+    height: 181px;
+    margin: 140px 0 0 60px;
+}
+
+.cmq-button-photo
+{
+    width: 210px;
+    height: 286px;
+    margin: 40px 0 0 115px;
+}
+
+.main-quick-buttons span
+{
+    color: #FFF;
+    font-family: "Proxima Nova", serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fmq-button-text
+{
+    margin-left: 130px;
+}
+
+.mmq-button-text
+{
+    margin-left: 123px;
+}
+
+.cmq-button-text
+{
+    margin-left: 105px;
+}
+
+/*Раздел с авторами*/
+.authors
+{
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 0 auto;
+    position: absolute;
+    top: 1372px;
+}
+
+.authors div
+{
+    width: 443px;
+    height: 536px;
+    border-radius: 10px;
+    background: rgba(6, 2, 35, 0.65);
+}
+
+.authors div:hover
+{
+    background: rgba(6, 2, 35, 0.45);
+    transition:all .3s;
+    width: 453px;
+    height: 546px;
+}
+
+.authors-overall
+{
+    margin-right: 25px;
+}
+
+.authors-dunya
+{
+    margin-right: 25px;
+}
+
+.authors-amir
+{
+    margin-right: 25px;
+}
+
+.ao-photo
+{
+    margin-top: 25px;
+    margin-left: 35px;
+    width: 375px;
+}
+
+.ad-photo
+{
+    margin-top: 56px;
+    margin-left: 95px;
+
+    width: 250px;
+    height: 250px;
+}
+
+.aa-photo
+{
+    margin-top: 56px;
+    margin-left: 95px;
+    width: 250px;
+    height: 250px;
+    border-radius: 794px;
+    background: url(images/perdoshmig.png), lightgray 50% / cover no-repeat;
+}
+
+.ao-text-first
+{
+    color: #FFF;
+    font-family: "Proxima Nova", serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 400px;
+
+    margin-top: 25px;
+    margin-left: 35px;
+    word-wrap: break-word;
+    display: flex;
+}
+
+.ao-text-second
+{
+    color: #FFF;
+    font-family: "Proxima Nova", serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 400px;
+
+    margin-left: 35px;
+    word-wrap: break-word;
+    display: flex;
+}
+
+.ad-text-first
+{
+    color: #FFF;
+    text-align: center;
+    font-family: "Proxima Nova", serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-top: 15px;
+    margin-left: 20px;
+    word-wrap: break-word;
+    display: flex;
+}
+
+.ad-text-second
+{
+    color: #FFF;
+    text-align: center;
+    font-family: "Proxima Nova", serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-left: 65px;
+    word-wrap: break-word;
+    display: flex;
+}
+
+.aa-text-first
+{
+    color: #FFF;
+    text-align: center;
+    font-family: "Proxima Nova", serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-top: 15px;
+    margin-left: 105px;
+    word-wrap: break-word;
+    display: flex;
+}
+
+.aa-text-second
+{
+    color: #FFF;
+    text-align: center;
+    font-family: "Proxima Nova", serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin-left: 55px;
+    word-wrap: break-word;
+    display: flex;
+}
+
+/*Псевдофутер*/
+
+
+
+/*хедер*/
+header
+{
+    display: flex;
+    justify-content: center;
+    width: 105%;
+    height: 105px;
+    border-radius: 0 0 10px 10px;
+
+
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    backdrop-filter: blur(2px);
+    position: fixed;
+    z-index: 999;
+}
+
+.for-header
+{
+    margin-top: 3px;
+}
+
+
+/*СЮДА ЗАНОСИТЬ ВСЕ ЗНАЧЕНИЯ, ЧТОБЫ ОНИ ЦЕНТРИРОВАЛИСЬ В ХЕДЕРЕ*/
+.logo, .quick-buttons, .search, .avatar-photo, .wrapper
+{
+    margin-top: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo
+{
+    margin-right: 50px;
+
+    color: #FFF;
+    font-family: Proxima Nova, serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.quick-buttons
+{
+    margin-right: 20px;
+}
+
+.quick-buttons li
+{
+    display: inline-block;
+    margin-right: 24px;
+}
+
+.quick-buttons a
+{
+    color: #FFF;
+    font-family: Proxima Nova, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.quick-buttons a:hover
+{
+    color: #9ffafa;
+
+}
+
+.avatar-photo
+{
+    width: 50px;
+    text-shadow: 1px 1px 2px #000000;
+    margin-right: 25px;
+}
+
+/*ПОИСК*/
+    .search
+    {
+        width: 500px;
+        height: 32px;
+        border-radius: 10px 10px 10px 10px;
+        margin-right: 50px;
+
+        background: rgba(255, 255, 255, 0.76);
+    }
+
+    *
+    {
+        box-sizing: border-box;
+    }
+
+    form
+    {
+        position: relative;
+        width: 300px;
+        margin: 0 auto;
+        background: #A3D0C3;
+    }
+
+    input, button
+    {
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+
+    input
+    {
+        width: 94%;
+        height: 35px;
+        padding-left: 15px;
+        font-family: Proxima Nova, serif;
+        filter: invert(25%);
+    }
+
+    button
+    {
+        height: 33px;
+        width: 42px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+    }
+
+    .search-photo-filter
+    {
+        filter: invert(70%);
+    }
+
+/*ВЫБОР ЯЗЫКА*/
+
+    .wrapper .title
+    {
+        font-weight: 700;
+        font-size: 24px;
+        color: rgba(255, 255, 255, 0.04);
+    }
+
+    .select_wrap
+    {
+        width: 150px;
+        margin: 15px auto;
+        position: relative;
+        user-select: none;
+        font-family: Proxima Nova, serif;
+    }
+
+    .select_wrap .default_option
+    {
+        color: rgba(255, 255, 255, 100%);
+        border-radius: 5px;
+        position: relative;
+        cursor: pointer;
+        list-style: none;
+    }
+
+    .select_wrap .default_option li
+    {
+        padding: 10px 20px;
+    }
+
+    .select_wrap .select_ul
+    {
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        color: rgba(255, 255, 255, 100%);
+        border-radius: 5px;
+        display: none;
+        list-style: none;
+    }
+
+    .select_wrap .select_ul li
+    {
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    .select_wrap .select_ul li:first-child:hover
+    {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        appearance: none;
+    }
+
+    .select_wrap .select_ul li:last-child:hover
+    {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        appearance: none;
+    }
+
+    .select_wrap .select_ul li:hover
+    {
+        background: rgba(255, 244, 221, 0.42);
+        appearance: none;
+    }
+
+    .select_wrap .option
+    {
+        display: flex;
+        align-items: center;
+        appearance: none;
+    }
+
+    .select_wrap .option .icon
+    {
+        background: url(images/language_selection.png) no-repeat 0 0;
+        width: 32px;
+        height: 32px;
+        margin-right: 15px;
+        appearance: none;
+    }
+
+    .select_wrap .option.en .icon
+    {
+        background-position: 0 0;
+        appearance: none;
+    }
+    
+    .select_wrap .option.ru .icon
+    {
+        background-position:  0 -35px;
+        appearance: none;
+    }
+
+    .select_wrap .option.es .icon
+    {
+        background-position: 0 -72px;
+        appearance: none;
+    }
+
+    .select_wrap .option.cn .icon
+    {
+        background-position: 0 -111px;
+        width: 32px;
+        appearance: none;
+    }
+
+    .select_wrap.active .select_ul
+    {
+        display: block;
+        appearance: none;
+    }
+
+    .select_wrap.active .default_option:before
+    {
+        top: 25p;
+        transform: rotate(-225deg);
+        appearance: none;
+    }
+
+    .used-photo
+    {
+        color: #FFF;
+        text-align: center;
+        font-family: "Proxima Nova", serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    
+        position: absolute;
+        bottom: 0;
+        top: calc(var(--body-height));
+        margin-left: 10px;
+    
+    }
+
+          p {
+        font-size: 20px;
+        color: #ffffff;
+      }
+

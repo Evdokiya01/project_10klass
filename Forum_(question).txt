@@ -1,0 +1,3 @@
+id;name;author;topic;text;photo1;photo2;photo3
+0;не работает кнопка;Амир;спасите ,помогите, аааа;'images/market.png';'images/market.png';'images/market.png'
+1;как открыть приложение?;Амир;не могу найти иконку приложения на столе, только картинка :_(;'images/market.png';'images/market.png';'images/market.png'

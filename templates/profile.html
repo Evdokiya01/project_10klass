@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('static', filename='profile.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='mainpage.css') }}">
+
+<link rel="stylesheet" href="profile.css">
+        <div class="background">
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <formp>
+            <div class="social">
+              <div class="go" ><a href="/Registration_Profile">Регистрация</a></div>
+              <div class="fb" ><a href="/log_In_profile">Вход</a></div>
+            </div>
+        </formp>{% endblock %}

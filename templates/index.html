@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+
+        <div class="visit-card">
+            <img class="visit-card-photo" src="{{ url_for('static', filename='images/coolimg.png') }}" alt="">
+
+            <span class="visit-card-main-text">
+                Вас приветствует <strong>SVIDQN!</strong>
+            </span>
+
+            <span class="visit-card-desc-text">
+                Здесь вы можете найти все, что захотите: модели, курсы, обмен опытом и фриланс на родном языке!
+                <br>
+                <br>
+                <strong>В разработке</strong>
+            </span>
+
+
+        </div>
+        <div class="main-quick-buttons">
+
+            <a href="/market" class="market-main-quick-button">
+                <img class="mmq-button-photo" src="{{ url_for('static', filename='images/market.png') }}" alt="">
+                <span class="mmq-button-text">Магазин</span>
+            </a>
+
+            <a href="/forum" class="forum-main-quick-button">
+                <img class="fmq-button-photo" src="{{ url_for('static', filename='images/forum.png') }}" alt="">
+                <span class="fmq-button-text">Форум</span>
+            </a>
+
+            <a href="/courses" class="courses-main-quick-button">
+                <img class="cmq-button-photo" src="{{ url_for('static', filename='images/courses.png') }}" alt="">
+                <span class="cmq-button-text">Курсы</span>
+            </a>
+        </div>
+
+        <div class="authors">
+            <div class="authors-overall">
+                <span class="ao-text-first">IT-студенты защищают ваши 3D-интересы</span>
+                <br>
+                <br>
+                <span class="ao-text-second">Проект создали 2 одноклассника из Москвы </span>
+                <img class="ao-photo" src="{{ url_for('static', filename='images/sch444&moscow.png') }}" alt="">
+            </div>
+
+            <div class="authors-dunya">
+                <img class="ad-photo" src="{{ url_for('static', filename='images/dunya.png') }}" alt="">
+                <span class="ad-text-first">Евдокия Осипенко</span>
+                <br>
+                <span class="ad-text-second">Back-End Developer</span>
+            </div>
+
+            <div class="authors-amir">
+                <img class="aa-photo" src="{{ url_for('static', filename='images/perdoshmig.png') }}" alt="">
+                <span class="aa-text-first">Амир Кулиев</span>
+                <br>
+                <span class="aa-text-second">Front-End Developer</span>
+            </div>
+        </div>
+
+        <div class="themes"></div>
+
+        <div class="footer"></div>
+{% endblock%}

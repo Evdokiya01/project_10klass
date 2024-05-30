@@ -1,0 +1,1 @@
+id;author;text;photo1;photo2;photo3;question_number

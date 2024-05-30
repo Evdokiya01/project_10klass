@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('static', filename='cards.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='mainpage.css') }}">
+
+
+    <main>
+
+
+        <div class="content">
+
+            <div>
+                <a>
+                            <p class="text">            типо отступ, хз как это сделать           </p>
+                            <p class="text">            hhh           </p>
+                            <p class="text">            hhh           </p>
+                            <p class="text">            типо отступ, хз как это сделать           </p>
+                            <p class="text">            типо отступ, хз как это сделать           </p>
+                </a>
+            </div>
+
+
+            <div class="products">
+                {% for i in file %}
+                    <a href="/course" >
+                        <div class="product">
+                            <p>_</p>
+                            <img alt="New Balance 574 YURT" src="{{ url_for('static', filename='images/courses.png') }}" class="product-image" />
+                            <div class="product-info">
+                                <h3 class="text">Название {{i.split(";")[1]}}</h3>
+                                <p class="text">{{i.split(";")[2]}}</p>
+                            </div>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+
+
+
+    </main>{% endblock %}
