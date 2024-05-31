@@ -9,18 +9,17 @@
             <div class="shape"></div>
             <div class="shape"></div>
         </div>
-        <formp method="POST">
-            <h3>Login Here</h3>
+        <formp>
+            <form method="POST">
+                <h3>Регистрация</h3>
+            <label>Логин (почта)</label>
+            <input type="email" name="email" class="email" placeholder="Почта">
 
-            <label for="email">Username</label>
-            <input type="text" name="email" id="email"placeholder="Email or Phone">
+            <label>Пароль</label>
+            <input type="password" name="password" class="password" placeholder="Пароль">
 
-            <label for="password">Password</label>
-            <input type="password" name="password"  placeholder="Password" id="password">
+            <input type="submit" class="btn btn-success" value="Зарегистрироваться">
+            </form>
+        </formp>
 
-            <a href="/account">Sign up</a>
-            <div class="social">
-              <div class="go"><i class="fab fa-google"></i>  Google</div>
-              <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
-            </div>
-        </formp>{% endblock %}
+{% endblock %}

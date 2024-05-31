@@ -1,1 +1,2 @@
-id;name;balance;photo;description;rating;existence;which_course_is_available;email;login;password
+name;balance;photo;description;rating;existence;which_course_is_available;email;password
+Иванов Иван;0;images/avatar_photo.png;;4;1;;fhgjhkj@gdfyui;guyio

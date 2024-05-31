@@ -60,24 +60,31 @@ def profile():
     return render_template("profile.html")
 
 
-@app.route('/Registration_Profile')
+@app.route('/Registration_Profile', methods=['POST', 'GET'])
 def Registration_Profile():
-    return render_template("Registration_Profile.html")
+    if request.method == "POST":  # добавление данных
+        email = request.form['email']
+        password = request.form['password']
+        f = open('users.txt', 'a')
+        f.write(f"\nИванов Иван;0;images/avatar_photo.png;;4;1;;{email};{password}")
+        try:
+            return redirect('/account')
+        except:
+            return "Ошибка"
+    else:
+        return render_template("Registration_Profile.html")
 
 
-@app.route('/log_In_profile')
+@app.route('/log_In_profile', methods=['POST', 'GET'])
 def log_In_profile():
     if request.method == "POST":  # добавление данных
-        # print(1)
         email = request.form['email']
         password = request.form['password']
         USER = email
-        # print(email, password)
+        print(email, password)
         try:
-            # print(3)
-            return redirect('/')
+            return redirect('/account')
         except:
-            # print(2)
             return "Неверное имя пользователя или пароль"
     else:
         return render_template("log_In_profile.html")
