@@ -65,7 +65,7 @@ def Registration_Profile():
     return render_template("Registration_Profile.html")
 
 
-@app.route('/log_In_profile')
+@app.route('/log_In_profile', methods=['POST', 'GET'])
 def log_In_profile():
     if request.method == "POST":  # добавление данных
         # print(1)
@@ -75,7 +75,7 @@ def log_In_profile():
         # print(email, password)
         try:
             # print(3)
-            return redirect('/')
+            return redirect('/log_In_profile')
         except:
             # print(2)
             return "Неверное имя пользователя или пароль"
